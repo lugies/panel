@@ -34,7 +34,7 @@
 						Kullanıcı GİRİş
 					</span>
 				</div>
-				<form action="login.php" method="POST" class="login100-form validate-form">
+				<form action="./login.php" method="POST" class="login100-form validate-form">
 					<div class="wrap-input100 validate-input m-b-26" data-validate="Username is required">
 						<span class="label-input100">Kullanıcı Adı veya Telefon Numarası</span>
 						<input class="input100" type="text" name="username" placeholder="Kullanıcı Adı">
@@ -63,7 +63,10 @@
 					</div>
 
 					<div class="container-login100-form-btn">
-						<input type="submit" class="login100-form-btn" value="Giriş">
+						<input type="submit" class="login100-form-btn" value="GİRİŞ YAP">
+					</div>
+					<div class="container-login100-form-btn">
+						<a class="login100-form-btn" href="./kullanici-ekle.php">KAYIT OL</a>
 					</div>
 				</form>
 			</div>

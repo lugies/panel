@@ -16,7 +16,7 @@
     include ('admin/vb.php'); 
     session_start();
     if(!isset($_SESSION['users_id'])){
-        header("location:/login/index.php");
+        header("location:./index.php");
     }
 ?>
 
@@ -24,14 +24,20 @@
     <div class="container">
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
         <ul class="navbar-nav">
-            <li class="nav-item">
-            <a class="nav-link" href="panel.php">PANEL</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="musteri.php">Müşteri Listesi</a>
-            </li>
             <li class="nav-item active">
-            <a class="nav-link" href="parfum.php">Parfüm Listesi</a>
+            <a class="nav-link" href="kullanici-panel.php">PANEL</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="parfum-siparis.php">Parfüm Siparişi Ver</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="parfumler.php">Parfüm Listesi</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Bilgilerimi Güncelle</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="cikis.php">Çıkış Yap</a>
             </li>
         </ul>
     </nav>

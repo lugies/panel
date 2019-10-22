@@ -1,5 +1,5 @@
 <?php
-    include ('admin/vb.php');
+    include ('./admin/vb.php');
     if(isset($_POST)){
         $query = $db->query("Select users_id, users_name,users_phone, users_pass FROM users");
             $query->execute();
@@ -12,7 +12,7 @@
                 if (($row['users_name'] === $username) && ($row['users_pass'] === $pass)) {
                     session_start();       
                     $_SESSION['users_id'] = $userId;
-                    header("Location: /login/kullanici-panel.php");
+                    header("Location: ./kullanici-panel.php");
                 }
                 else {
                     echo 'Kullanıcı adı veya şifre hatalı';

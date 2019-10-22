@@ -16,10 +16,10 @@
     include ('vb.php'); 
     session_start();
     if(!isset($_SESSION['admin_id'])){
-        header("location:/login/admin/index.php");
+        header("location:/panel/admin/index.php");
     }
     if(!isset($_GET['id'])) {
-        header("location:/login/admin/musteri.php");
+        header("location:/panel/admin/musteri.php");
     }
 ?>
 

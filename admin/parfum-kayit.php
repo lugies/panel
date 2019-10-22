@@ -2,10 +2,10 @@
     include ('vb.php'); 
     session_start();
     if(!isset($_SESSION['admin_id'])){
-        header("location:/login/admin/index.php");
+        header("location:/panel/admin/index.php");
     }
     if(!isset($_POST)){
-        header("location:/login/admin/parfum-ekle.php");
+        header("location:/panel/admin/parfum-ekle.php");
     }
 ?>
 <?php
@@ -27,7 +27,7 @@
     ));
     if ( $insert ){
         $last_id = $db->lastInsertId();
-        header("location:/login/admin/parfum-ekle.php");
+        header("location:/panel/admin/parfum-ekle.php");
         print "insert işlemi başarılı!" . $last_id;
     }
 

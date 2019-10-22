@@ -2,13 +2,13 @@
     include ('vb.php'); 
     session_start();
     if(!isset($_SESSION['admin_id'])){
-        header("location:/login/index.php");
+        header("location:/panel/index.php");
     }
     if($_GET['id'] == null) {
-        header("location:/login/index.php");
+        header("location:/panel/index.php");
     }
     if(!isset($_GET['id'])) {
-        header("location:/login/index.php");
+        header("location:/panel/index.php");
     }
 ?>
 <?php
@@ -17,5 +17,5 @@
     $delete->execute(array(
         $_GET['id']
     ));
-    header("location:/login/admin/musteri.php");
+    header("location:/panel/admin/musteri.php");
 ?>

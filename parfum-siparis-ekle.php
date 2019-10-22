@@ -2,7 +2,7 @@
     include ('admin/vb.php'); 
     session_start();
     if(!isset($_SESSION['users_id'])){
-        header("location:/login/index.php");
+        header("location:/panel/index.php");
     }
 ?>
 <?php
@@ -36,7 +36,7 @@
         ));
         if ( $insert ){
             print "insert işlemi başarılı!" . $last_id;
-            header("location:/login/kullanici-panel.php?" . $okey  = 'okey');
+            header("location:/panel/kullanici-panel.php?" . $okey  = 'okey');
         }
     }
 

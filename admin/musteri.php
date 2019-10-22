@@ -19,7 +19,7 @@
     include ('vb.php'); 
     session_start();
     if(!isset($_SESSION['admin_id'])){
-        header("location:/login/index.php");
+        header("location:/panel/index.php");
     }
 ?>
 
@@ -63,8 +63,8 @@
                             print "<th scope='row'>" . $row['users_id']."</th>";
                             print "<td>" . $row['users_name']."</td>";
                             print "<td>" . $row['users_phone']."</td>";
-                            print "<td><a class='btn btn-outline-info btn-sm btn-lg btn-block' href='/login/admin/mus-guncelle.php?id=". $row['users_id']."' role='button'>Güncelle</a></td>";
-                            print "<td><a id='".$row['users_id']."' class='btn btn-outline-info btn-sm btn-lg btn-block' href='/login/admin/sil.php?id=". $row['users_id']."' role='button' data-toggle='modal' data-target='#myModal' onClick='sil(this.id)'>Sil</a></td>";
+                            print "<td><a class='btn btn-outline-info btn-sm btn-lg btn-block' href='/panel/admin/mus-guncelle.php?id=". $row['users_id']."' role='button'>Güncelle</a></td>";
+                            print "<td><a id='".$row['users_id']."' class='btn btn-outline-info btn-sm btn-lg btn-block' href='/panel/admin/sil.php?id=". $row['users_id']."' role='button' data-toggle='modal' data-target='#myModal' onClick='sil(this.id)'>Sil</a></td>";
                             echo '</tr>';
                         }
                     ?>

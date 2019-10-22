@@ -16,7 +16,7 @@
     include ('vb.php'); 
     session_start();
     if(!isset($_SESSION['admin_id'])){
-        header("location:/login/index.php");
+        header("location:/panel/index.php");
     }
 ?>
 

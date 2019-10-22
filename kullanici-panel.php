@@ -19,7 +19,7 @@
     include ('admin/vb.php'); 
     session_start();
     if(!isset($_SESSION['users_id'])){
-        header("location:/login/index.php");
+        header("location:./index.php");
     }
 ?>
 
@@ -73,7 +73,7 @@
                                 $now = new DateTime();
                                 echo $date->diff($now)->format("%d gün, %h saat sonra teslim");
                             echo"</td>";
-                            print "<td><a class='btn btn-outline-info btn-sm btn-lg btn-block' href='/login/detay.php?id=". $row['orders_id']."' role='button'>Detaylar</a></td>";
+                            print "<td><a class='btn btn-outline-info btn-sm btn-lg btn-block' href='/panel/detay.php?id=". $row['orders_id']."' role='button'>Detaylar</a></td>";
                             echo '</tr>';
                         }
                     ?>

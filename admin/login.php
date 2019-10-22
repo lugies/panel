@@ -10,7 +10,7 @@
         if (($row['admin_nick'] === $username) && ($row['admin_pass'] === $pass)) {
             session_start();       
             $_SESSION['admin_id'] = $userId;
-            header("Location: /login/admin/panel.php");
+            header("Location: /panel/admin/panel.php");
         }
         else {
             echo 'Kullanıcı adı veya şifre hatalı';

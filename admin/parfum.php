@@ -16,7 +16,7 @@
     include ('vb.php'); 
     session_start();
     if(!isset($_SESSION['admin_id'])){
-        header("location:/login/index.php");
+        header("location:/panel/index.php");
     }
 ?>
 
@@ -66,8 +66,8 @@
                             elseif ($row['products_cat'] === 'U') {
                                 print "<td>" . "Unisex"."</td>";
                             }
-                            print "<td><a class='btn btn-outline-info btn-sm btn-lg btn-block' href='/login/admin/parfum-guncelle.php?id=". $row['products_id']."' role='button'>Güncelle</a></td>";
-                            print "<td><a id='".$row['products_id']."' class='btn btn-outline-info btn-sm btn-lg btn-block' href='/login/admin/sil.php?id=". $row['products_id']."' role='button' data-toggle='modal' data-target='#myModal' onClick='sil(this.id)'>Sil</a></td>";
+                            print "<td><a class='btn btn-outline-info btn-sm btn-lg btn-block' href='/panel/admin/parfum-guncelle.php?id=". $row['products_id']."' role='button'>Güncelle</a></td>";
+                            print "<td><a id='".$row['products_id']."' class='btn btn-outline-info btn-sm btn-lg btn-block' href='/panel/admin/sil.php?id=". $row['products_id']."' role='button' data-toggle='modal' data-target='#myModal' onClick='sil(this.id)'>Sil</a></td>";
                             echo '</tr>';
                         }
                     ?>
